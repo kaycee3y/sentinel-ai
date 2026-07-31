@@ -1,9 +1,8 @@
-import { Card } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Card } from "./ui/card"
+import { Badge } from "./ui/badge"
 import { Clock, Database } from "lucide-react"
-import { AgentResult } from "@/lib/agents/types"
+import { AgentResult } from "../lib/agents/types"
 
-// We map Claude's severity strings directly to Tailwind colors
 const getSeverityStyles = (severity: string) => {
   switch (severity) {
     case "critical": 
